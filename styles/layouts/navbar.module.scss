@@ -1,0 +1,66 @@
+.navbar,
+.navbarSticky {
+    background-color: var(--main-color);
+    padding: 10px 0;
+    z-index: 100;
+    transition: all 0.5s ease;
+    .left_side {
+        display: flex;
+        // background-color: yellow;
+        align-items: center;
+        justify-content: space-between;
+        width: 600px;
+        img {
+            height: 60px;
+            width: 160px;
+        }
+        ul {
+            display: flex;
+            width: 400px;
+            justify-content: space-between;
+            li {
+                a {
+                    font-family: var(--main-font);
+                    color: white;
+                    text-transform: capitalize;
+                    letter-spacing: 1px;
+                    transition: 0.4s all ease;
+                    &:hover {
+                        color: #9f9f9f;
+                    }
+                    &:active {
+                        transform: scale(0.9);
+                    }
+                }
+            }
+        }
+    }
+    .right_side {
+        display: flex;
+        width: 420px;
+        justify-content: space-between;
+        align-items: center;
+        li {
+            a {
+                font-family: var(--main-font);
+                letter-spacing: 1px;
+                color: white;
+                text-transform: capitalize;
+                transition: 0.4s all ease;
+                &:hover {
+                    color: #9f9f9f;
+                }
+                &:active {
+                    transform: scale(0.9);
+                }
+            }
+        }
+    }
+}
+.navbarSticky {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #111114ae;
+    backdrop-filter: blur(25px);
+}

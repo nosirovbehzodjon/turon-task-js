@@ -1,0 +1,66 @@
+.layout {
+    // background-color: yellow;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    img {
+        height: 600px;
+        width: 420px;
+        border-radius: 30px;
+        object-fit: cover;
+    }
+    .description {
+        width: 600px;
+        .name,
+        .desc,
+        .year {
+            letter-spacing: 1.5px;
+            font-family: var(--main-font);
+            margin-bottom: 1rem;
+        }
+        .name {
+            font-size: 25px;
+        }
+        .desc {
+            font-size: 18px;
+        }
+        .year {
+            font-size: 30px;
+            color: var(--btn-main-color);
+        }
+        .countries,
+        .gener {
+            display: flex;
+            li {
+                margin-right: 10px;
+            }
+            .paragraph {
+                margin-right: 20px;
+                color: var(--btn-main-color);
+                font-family: var(--main-font);
+            }
+        }
+        .employees {
+            .paragraph {
+                margin-right: 20px;
+                color: var(--btn-main-color);
+                font-family: var(--main-font);
+            }
+            ul{
+                display: flex;
+                flex-wrap: wrap;
+                li{
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}
+
+.slider_img{
+    border-radius: 20px;
+    object-fit: cover;
+    height: 250px;
+    width: 190px;
+    box-shadow: 5px 5px 2px 0px #ecece54c;
+}

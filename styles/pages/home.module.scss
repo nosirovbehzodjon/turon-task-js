@@ -1,0 +1,36 @@
+.content {
+    background-color: black;
+    .five {
+        height: 600px;
+        background-color: yellow;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            " card1 card1 card2 card3 "
+            " card1 card1 card4 card5 ";
+        .main {
+            grid-area: card1;
+            background-color: blueviolet;
+        }
+        .four {
+            height: 300px;
+            &:nth-child(2) {
+                background-color: green;
+                grid-area: card2;
+            }
+            &:nth-child(3) {
+                background-color: rgb(144, 30, 30);
+                grid-area: card3;
+            }
+            &:nth-child(4) {
+                background-color: rgb(26, 17, 199);
+                grid-area: card4;
+            }
+            &:nth-child(5) {
+                background-color: rgb(22, 151, 31);
+                grid-area: card5;
+            }
+        }
+    }
+}

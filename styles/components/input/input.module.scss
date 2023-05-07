@@ -1,0 +1,33 @@
+.input {
+    width: 100%;
+    padding: 2rem 0;
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
+    .title {
+        font-weight: 900;
+        margin-left: 5px;
+        font-family: var(--main-font);
+        color: var(--btn-main-color);
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    input {
+        height: 40px;
+        width: 100%;
+        padding: 0 20px;
+        border-radius: 30px;
+        border: 2px solid #3f3f3e;
+        outline: none;
+        font-family: var(--main-font);
+        color: #3f3f3e;
+        background-color: transparent;
+        font-size: 20px;
+        &::placeholder {
+            color: #3f3f3e;
+            font-size: 20px;
+            font-family: var(--main-font);
+            margin-top: 10px;
+        }
+    }
+}

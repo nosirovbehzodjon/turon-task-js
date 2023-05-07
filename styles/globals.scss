@@ -1,0 +1,106 @@
+:root {
+    --border-radius: 12px;
+    --main-font: font-regular;
+    --main-color: #111114;
+    --second-color: #432432;
+    --btn-main-color: #d81111;
+    --hover-color: #de7373;
+    --btn-second-color: transparent;
+    --btn-border-color: #ffffff;
+}
+body {
+    font-family: main-font;
+    background-color: var(--main-color);
+}
+
+ul {
+    list-style: none;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container {
+    width: 1400px;
+    margin: 0 auto;
+}
+.loading {
+    height: 80vh;
+}
+.p-1 {
+    padding: 10px;
+}
+.p-2 {
+    padding: 20px;
+}
+.p-3 {
+    padding: 30px;
+}
+.py-1 {
+    padding: 10px 0;
+}
+.py-2 {
+    padding: 20px 0;
+}
+.py-3 {
+    padding: 30px 0;
+}
+.w-1 {
+    width: 100px;
+}
+.w-2 {
+    width: 200px;
+}
+.w-3 {
+    width: 300px;
+}
+.w-4 {
+    width: 400px;
+}
+.w-5 {
+    width: 500px;
+}
+.flex {
+    display: flex;
+}
+.justify-center {
+    justify-content: center;
+}
+.justify-around {
+    justify-content: space-around;
+}
+.justify-evenly {
+    justify-content: space-evenly;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.items-center {
+    align-items: center;
+}
+.items-start {
+    align-items: flex-start;
+}
+.items-end {
+    align-items: flex-end;
+}
+.direction-column {
+    flex-direction: column;
+}
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+@font-face {
+    font-family: font-regular;
+    src: url("../src/assets/typography/orbitron/static/Orbitron-Regular.ttf");
+}
